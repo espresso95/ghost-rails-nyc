@@ -175,19 +175,19 @@ Done when:
 
 Goal: build the first usable browser experience around the map.
 
-- [ ] Create Vite React frontend.
-- [ ] Add MapLibre GL JS.
-- [ ] Add API client module.
-- [ ] Build main app layout with map and side panel.
-- [ ] Render current base map.
-- [ ] Load historic rail features from the backend.
-- [ ] Render point features as markers.
-- [ ] Render line features as overlays.
-- [ ] Add click selection for map features.
-- [ ] Build feature detail panel.
-- [ ] Show name, type, borough, years, status, routes, summary, safety note, and sources.
-- [ ] Add empty, loading, and error states.
-- [ ] Keep layout usable on desktop and mobile widths.
+- [x] Create Vite React frontend.
+- [x] Add MapLibre GL JS.
+- [x] Add API client module.
+- [x] Build main app layout with map and side panel.
+- [x] Render current base map.
+- [x] Load historic rail features from the backend.
+- [x] Render point features as markers.
+- [x] Render line features as overlays.
+- [x] Add click selection for map features.
+- [x] Build feature detail panel.
+- [x] Show name, type, borough, years, status, routes, summary, safety note, and sources.
+- [x] Add empty, loading, and error states.
+- [x] Keep layout usable on desktop and mobile widths.
 
 Done when:
 
@@ -197,16 +197,16 @@ Done when:
 
 Goal: connect selected map features to the local AI guide.
 
-- [ ] Build chat panel.
-- [ ] Add text input and submit behavior.
-- [ ] Add preset prompts for selected features.
-- [ ] Send selected feature ID with chat requests.
-- [ ] Display assistant answers.
-- [ ] Display source snippets or source cards.
-- [ ] Display confidence and safety notes where relevant.
-- [ ] Add loading and error states.
-- [ ] Keep chat history scoped to the current session.
-- [ ] Add a clear way to ask global questions when no feature is selected.
+- [x] Build chat panel.
+- [x] Add text input and submit behavior.
+- [x] Add preset prompts for selected features.
+- [x] Send selected feature ID with chat requests.
+- [x] Display assistant answers.
+- [x] Display source snippets or source cards.
+- [x] Display confidence and safety notes where relevant.
+- [x] Add loading and error states.
+- [x] Keep chat history scoped to the current session.
+- [x] Add a clear way to ask global questions when no feature is selected.
 
 Done when:
 

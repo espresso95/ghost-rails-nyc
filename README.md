@@ -148,3 +148,19 @@ cd backend
 source .venv/bin/activate
 python scripts/build_index.py --query "Why did City Hall Station close?"
 ```
+
+Install frontend dependencies:
+
+```bash
+cd frontend
+npm install
+```
+
+Start the frontend:
+
+```bash
+cd frontend
+npm run dev
+```
+
+Open `http://127.0.0.1:5173`.
