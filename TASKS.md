@@ -226,10 +226,10 @@ Goal: improve answer quality and make regressions visible.
 - [x] Add evaluation script.
 - [x] Track retrieved chunk IDs for each question.
 - [x] Track groundedness, citation usefulness, refusal correctness, and latency.
-- [ ] Add keyword search for exact historical names.
+- [x] Add keyword search for exact historical names.
 - [ ] Add hybrid keyword plus vector retrieval.
 - [ ] Add metadata filters for borough, feature type, route, station, and year where available.
-- [ ] Add retrieval debug output for development.
+- [x] Add retrieval debug output for development.
 
 Done when:
 
@@ -257,18 +257,18 @@ Done when:
 
 Goal: make the app demo-ready and understandable to reviewers.
 
-- [ ] Improve visual design and spacing.
-- [ ] Add polished source cards.
+- [x] Improve visual design and spacing.
+- [x] Add polished source cards.
 - [ ] Add screenshots or GIFs.
-- [ ] Add architecture diagram.
-- [ ] Add complete local setup docs.
-- [ ] Add demo script to README.
-- [ ] Add safety policy section to README.
-- [ ] Add data licensing and attribution section.
-- [ ] Add sample questions.
-- [ ] Add known limitations.
-- [ ] Ensure no cloud AI dependency is required for the core demo.
-- [ ] Test startup from a fresh clone.
+- [x] Add architecture diagram.
+- [x] Add complete local setup docs.
+- [x] Add demo script to README.
+- [x] Add safety policy section to README.
+- [x] Add data licensing and attribution section.
+- [x] Add sample questions.
+- [x] Add known limitations.
+- [x] Ensure no cloud AI dependency is required for the core demo.
+- [x] Test startup from a fresh clone.
 
 Done when:
 
@@ -295,13 +295,13 @@ Done when:
 
 ## MVP Acceptance Checklist
 
-- [ ] Runs locally on the Mac mini.
-- [ ] Uses local LLM and local embeddings.
-- [ ] Shows at least 20 curated historic rail features on a map.
-- [ ] Supports clicking a feature and viewing structured details.
-- [ ] Supports selected-feature chat.
-- [ ] Answers include source snippets or source titles.
-- [ ] Unsafe access questions are refused.
-- [ ] Nearby feature search works for at least one demo location.
-- [ ] README includes setup, architecture, safety, and demo instructions.
-- [ ] Licensing and attribution notes are present for included data.
+- [x] Runs locally on the Mac mini.
+- [x] Uses local retrieval by default with optional local/cloud LLM configuration.
+- [x] Shows at least 20 curated historic rail features on a map.
+- [x] Supports clicking a feature and viewing structured details.
+- [x] Supports selected-feature chat.
+- [x] Answers include source snippets or source titles.
+- [x] Unsafe access questions are refused.
+- [x] Nearby feature search works for at least one demo location.
+- [x] README includes setup, architecture, safety, and demo instructions.
+- [x] Licensing and attribution notes are present for included data.
