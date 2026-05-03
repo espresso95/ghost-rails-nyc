@@ -52,6 +52,7 @@ class AppSettings:
     chat: ChatModelSettings
     embedding: EmbeddingModelSettings
     retrieval: RetrievalSettings
+    enable_llm_answers: bool
 
     @property
     def embedding_index_path(self) -> Path:
@@ -104,6 +105,7 @@ def load_settings(env: Mapping[str, str] | None = None) -> AppSettings:
         chat=chat,
         embedding=embedding,
         retrieval=retrieval,
+        enable_llm_answers=_read_bool(values, "GHOST_RAILS_ENABLE_LLM_ANSWERS", False),
     )
 
 
@@ -175,6 +177,18 @@ def _read_float(values: Mapping[str, str], name: str, default: float) -> float:
         return float(value)
     except ValueError as error:
         raise ValueError(f"{name} must be a number") from error
+
+
+def _read_bool(values: Mapping[str, str], name: str, default: bool) -> bool:
+    value = values.get(name)
+    if value is None or value == "":
+        return default
+    normalized = value.strip().lower()
+    if normalized in {"1", "true", "yes", "on"}:
+        return True
+    if normalized in {"0", "false", "no", "off"}:
+        return False
+    raise ValueError(f"{name} must be a boolean")
 
 
 def _slug(value: str) -> str:

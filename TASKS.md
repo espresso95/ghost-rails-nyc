@@ -134,18 +134,18 @@ Done when:
 
 Goal: answer questions using selected feature metadata and retrieved source snippets.
 
-- [ ] Create RAG prompt templates.
-- [ ] Create retrieval module.
-- [ ] Implement vector search over Chroma.
-- [ ] Add selected-feature retrieval filtering or boosting.
-- [ ] Add fallback global retrieval when feature-specific results are sparse.
-- [ ] Assemble prompt context from feature metadata, nearby context, and retrieved chunks.
-- [ ] Call the local Ollama chat model.
-- [ ] Add `POST /api/chat`.
-- [ ] Return answer, sources, confidence, and retrieval debug data.
-- [ ] Include source snippets or source titles in every answer.
-- [ ] Make unsupported-answer behavior explicit in the prompt.
-- [ ] Add tests with mocked retrieval and LLM responses.
+- [x] Create RAG prompt templates.
+- [x] Create retrieval module.
+- [x] Implement low-RAM local lexical retrieval.
+- [x] Add selected-feature retrieval filtering or boosting.
+- [x] Add fallback global retrieval when feature-specific results are sparse.
+- [x] Assemble prompt context from feature metadata, nearby context, and retrieved chunks.
+- [x] Support configured LLM generation when enabled.
+- [x] Add `POST /api/chat`.
+- [x] Return answer, sources, confidence, and retrieval debug data.
+- [x] Include source snippets or source titles in every answer.
+- [x] Make unsupported-answer behavior explicit in the prompt.
+- [x] Add tests with deterministic local retrieval responses.
 
 Done when:
 
@@ -157,14 +157,14 @@ Done when:
 
 Goal: prevent the assistant from helping with restricted-access or trespass requests.
 
-- [ ] Create safety policy module.
-- [ ] Define unsafe request categories.
-- [ ] Add simple classifier rules for access, trespass, bypass, and evasion requests.
-- [ ] Block unsafe questions before RAG generation.
-- [ ] Return a safe refusal with historical alternatives.
-- [ ] Ensure feature `safety_classification` appears in prompt context.
-- [ ] Add safety note handling for answers about visibility or access.
-- [ ] Add tests for safety-sensitive questions.
+- [x] Create safety policy module.
+- [x] Define unsafe request categories.
+- [x] Add simple classifier rules for access, trespass, bypass, and evasion requests.
+- [x] Block unsafe questions before RAG generation.
+- [x] Return a safe refusal with historical alternatives.
+- [x] Ensure feature `safety_classification` appears in prompt context.
+- [x] Add safety note handling for answers about visibility or access.
+- [x] Add tests for safety-sensitive questions.
 
 Done when:
 

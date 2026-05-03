@@ -3,6 +3,7 @@ from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api.chat import router as chat_router
 from app.api.features import router as features_router
 from app.api.health import router as health_router
 
@@ -19,6 +20,7 @@ def create_app() -> FastAPI:
         allow_methods=["*"],
         allow_headers=["*"],
     )
+    app.include_router(chat_router)
     app.include_router(features_router)
     app.include_router(health_router)
     return app
