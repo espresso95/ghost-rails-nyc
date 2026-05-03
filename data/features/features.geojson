@@ -1,0 +1,410 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.0049, 40.7134]},
+      "properties": {
+        "id": "city_hall_station",
+        "name": "City Hall Station",
+        "feature_type": "abandoned_station",
+        "borough": "Manhattan",
+        "status": "closed",
+        "opened_year": 1904,
+        "closed_year": 1945,
+        "nearby_active_routes": ["4", "5", "6", "J", "Z"],
+        "nearby_active_stations": ["Brooklyn Bridge-City Hall", "Chambers Street"],
+        "visibility": "Known from historical material, museum context, official tours, and views from regular trains where permitted.",
+        "safety_classification": "museum_or_official_tour",
+        "summary": "Former IRT loop station beneath City Hall Park, noted for its curved platform and decorative architecture.",
+        "source_ids": ["local_notes_city_hall", "local_notes_irt_closed_stations"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.0072, 40.7164]},
+      "properties": {
+        "id": "worth_street_station",
+        "name": "Worth Street Station",
+        "feature_type": "abandoned_station",
+        "borough": "Manhattan",
+        "status": "closed",
+        "opened_year": 1904,
+        "closed_year": 1962,
+        "nearby_active_routes": ["4", "5", "6", "J", "Z"],
+        "nearby_active_stations": ["Brooklyn Bridge-City Hall", "Canal Street"],
+        "visibility": "Historical-only map feature; do not attempt access.",
+        "safety_classification": "do_not_access",
+        "summary": "Closed local station on the original IRT route, made redundant by nearby station spacing and platform changes.",
+        "source_ids": ["local_notes_irt_closed_stations"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-73.9896, 40.7382]},
+      "properties": {
+        "id": "eighteenth_street_station",
+        "name": "18th Street Station",
+        "feature_type": "abandoned_station",
+        "borough": "Manhattan",
+        "status": "closed",
+        "opened_year": 1904,
+        "closed_year": 1948,
+        "nearby_active_routes": ["4", "5", "6", "L", "N", "Q", "R", "W"],
+        "nearby_active_stations": ["14th Street-Union Square", "23rd Street"],
+        "visibility": "May be visible only from passing trains where normal service permits.",
+        "safety_classification": "public_view_only",
+        "summary": "Former local station between 14th Street-Union Square and 23rd Street on the original IRT line.",
+        "source_ids": ["local_notes_irt_closed_stations"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-73.9689, 40.7938]},
+      "properties": {
+        "id": "ninety_first_street_station",
+        "name": "91st Street Station",
+        "feature_type": "abandoned_station",
+        "borough": "Manhattan",
+        "status": "closed",
+        "opened_year": 1904,
+        "closed_year": 1959,
+        "nearby_active_routes": ["1", "2", "3"],
+        "nearby_active_stations": ["86th Street", "96th Street"],
+        "visibility": "Historical-only map feature; do not attempt access.",
+        "safety_classification": "do_not_access",
+        "summary": "Former Broadway-Seventh Avenue local station closed after nearby station improvements changed stop spacing.",
+        "source_ids": ["local_notes_irt_closed_stations"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-73.9793, 40.6897]},
+      "properties": {
+        "id": "myrtle_avenue_closed_platform",
+        "name": "Myrtle Avenue Closed Platform",
+        "feature_type": "closed_platform",
+        "borough": "Brooklyn",
+        "status": "closed platform",
+        "opened_year": 1915,
+        "closed_year": 1956,
+        "nearby_active_routes": ["B", "Q", "R"],
+        "nearby_active_stations": ["DeKalb Avenue"],
+        "visibility": "Known primarily from passing train views and historical documentation.",
+        "safety_classification": "public_view_only",
+        "summary": "Closed platform area near DeKalb Avenue tied to major track reconfiguration in Downtown Brooklyn.",
+        "source_ids": ["local_notes_bmt_brooklyn"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-73.9666, 40.6773]},
+      "properties": {
+        "id": "dean_street_station",
+        "name": "Dean Street Station",
+        "feature_type": "abandoned_station",
+        "borough": "Brooklyn",
+        "status": "closed",
+        "opened_year": 1897,
+        "closed_year": 1995,
+        "nearby_active_routes": ["S"],
+        "nearby_active_stations": ["Park Place", "Franklin Avenue"],
+        "visibility": "Street-level traces are limited; use public sidewalks only.",
+        "safety_classification": "public_view_only",
+        "summary": "Former Franklin Avenue Shuttle station closed during the route's 1990s reconstruction.",
+        "source_ids": ["local_notes_bmt_brooklyn"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-73.9318, 40.8308]},
+      "properties": {
+        "id": "sedgwick_avenue_station",
+        "name": "Sedgwick Avenue Station",
+        "feature_type": "abandoned_station",
+        "borough": "Bronx",
+        "status": "closed",
+        "opened_year": 1918,
+        "closed_year": 1958,
+        "nearby_active_routes": ["4", "B", "D"],
+        "nearby_active_stations": ["161st Street-Yankee Stadium"],
+        "visibility": "Historical-only map feature; do not attempt access.",
+        "safety_classification": "do_not_access",
+        "summary": "Station associated with the former Polo Grounds Shuttle connection between Manhattan and the Bronx.",
+        "source_ids": ["local_notes_polo_grounds_shuttle"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-73.9906, 40.6882]},
+      "properties": {
+        "id": "court_street_station",
+        "name": "Court Street Station",
+        "feature_type": "museum_station",
+        "borough": "Brooklyn",
+        "status": "museum",
+        "opened_year": 1936,
+        "closed_year": 1946,
+        "nearby_active_routes": ["2", "3", "4", "5", "R"],
+        "nearby_active_stations": ["Borough Hall", "Court Street"],
+        "visibility": "Accessible as the New York Transit Museum when open to the public.",
+        "safety_classification": "museum_or_official_tour",
+        "summary": "Former IND station repurposed as the New York Transit Museum.",
+        "source_ids": ["local_notes_transit_museum"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-73.9553, 40.7123]},
+      "properties": {
+        "id": "south_fourth_street_shell",
+        "name": "South 4th Street Shell",
+        "feature_type": "unused_provision",
+        "borough": "Brooklyn",
+        "status": "never opened",
+        "opened_year": null,
+        "closed_year": null,
+        "nearby_active_routes": ["G", "J", "M", "Z"],
+        "nearby_active_stations": ["Broadway", "Lorimer Street", "Hewes Street"],
+        "visibility": "Not publicly accessible; discuss only from documented historical context.",
+        "safety_classification": "do_not_access",
+        "summary": "Unused IND Second System station shell planned for routes that were not completed.",
+        "source_ids": ["local_notes_ind_second_system"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-73.8913, 40.7466]},
+      "properties": {
+        "id": "roosevelt_avenue_upper_level",
+        "name": "Roosevelt Avenue Upper-Level Provisions",
+        "feature_type": "unused_provision",
+        "borough": "Queens",
+        "status": "never opened",
+        "opened_year": null,
+        "closed_year": null,
+        "nearby_active_routes": ["7", "E", "F", "M", "R"],
+        "nearby_active_stations": ["Jackson Heights-Roosevelt Avenue", "74th Street-Broadway"],
+        "visibility": "Not publicly accessible; discuss only from documented historical context.",
+        "safety_classification": "do_not_access",
+        "summary": "Unused provisions associated with unbuilt IND expansion concepts near Roosevelt Avenue.",
+        "source_ids": ["local_notes_ind_second_system"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-73.989, 40.703], [-73.979, 40.735], [-73.963, 40.775], [-73.948, 40.808]]
+      },
+      "properties": {
+        "id": "second_avenue_el",
+        "name": "Second Avenue Elevated",
+        "feature_type": "former_elevated",
+        "borough": "Manhattan",
+        "status": "demolished",
+        "opened_year": 1880,
+        "closed_year": 1942,
+        "nearby_active_routes": ["4", "5", "6", "Q"],
+        "nearby_active_stations": ["Grand Central-42nd Street", "86th Street"],
+        "visibility": "Historical alignment only; use public streets for neighborhood context.",
+        "safety_classification": "historical_only",
+        "summary": "Former Manhattan elevated line along the East Side, removed before the modern Second Avenue Subway opened.",
+        "source_ids": ["local_notes_manhattan_els"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-74.003, 40.714], [-73.987, 40.744], [-73.969, 40.791], [-73.929, 40.846]]
+      },
+      "properties": {
+        "id": "third_avenue_el_manhattan",
+        "name": "Third Avenue Elevated",
+        "feature_type": "former_elevated",
+        "borough": "Manhattan",
+        "status": "demolished",
+        "opened_year": 1878,
+        "closed_year": 1955,
+        "nearby_active_routes": ["4", "5", "6"],
+        "nearby_active_stations": ["14th Street-Union Square", "125th Street"],
+        "visibility": "Historical alignment only; use public streets for neighborhood context.",
+        "safety_classification": "historical_only",
+        "summary": "Former elevated route on Manhattan's East Side, with Bronx service lasting longer than Manhattan service.",
+        "source_ids": ["local_notes_manhattan_els"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-74.013, 40.704], [-73.998, 40.735], [-73.981, 40.775], [-73.944, 40.835]]
+      },
+      "properties": {
+        "id": "ninth_avenue_el",
+        "name": "Ninth Avenue Elevated",
+        "feature_type": "former_elevated",
+        "borough": "Manhattan",
+        "status": "demolished",
+        "opened_year": 1868,
+        "closed_year": 1940,
+        "nearby_active_routes": ["1", "2", "3", "A", "C", "E"],
+        "nearby_active_stations": ["14th Street", "59th Street-Columbus Circle"],
+        "visibility": "Historical alignment only; use public streets for neighborhood context.",
+        "safety_classification": "historical_only",
+        "summary": "Early elevated railway route on Manhattan's West Side and a major predecessor to later rapid transit patterns.",
+        "source_ids": ["local_notes_manhattan_els"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-73.984, 40.697], [-73.956, 40.698], [-73.928, 40.697], [-73.903, 40.700]]
+      },
+      "properties": {
+        "id": "myrtle_avenue_el_remnants",
+        "name": "Myrtle Avenue Elevated Remnants",
+        "feature_type": "former_elevated",
+        "borough": "Brooklyn",
+        "status": "partly demolished",
+        "opened_year": 1889,
+        "closed_year": 1969,
+        "nearby_active_routes": ["M", "J", "Z"],
+        "nearby_active_stations": ["Myrtle Avenue", "Jay Street-MetroTech"],
+        "visibility": "Some context can be understood from public streets and active elevated segments.",
+        "safety_classification": "public_view_only",
+        "summary": "Former western portion of the Myrtle Avenue elevated route, with remaining active service farther east.",
+        "source_ids": ["local_notes_bmt_brooklyn"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-73.992, 40.689], [-73.956, 40.683], [-73.921, 40.678], [-73.883, 40.679]]
+      },
+      "properties": {
+        "id": "fulton_street_el",
+        "name": "Fulton Street Elevated",
+        "feature_type": "former_elevated",
+        "borough": "Brooklyn",
+        "status": "demolished",
+        "opened_year": 1888,
+        "closed_year": 1940,
+        "nearby_active_routes": ["A", "C", "J", "Z"],
+        "nearby_active_stations": ["Hoyt-Schermerhorn Streets", "Broadway Junction"],
+        "visibility": "Historical alignment only; use public streets for neighborhood context.",
+        "safety_classification": "historical_only",
+        "summary": "Former Brooklyn elevated route later paralleled or replaced in part by IND subway service.",
+        "source_ids": ["local_notes_bmt_brooklyn"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-73.844, 40.713], [-73.836, 40.698], [-73.831, 40.683], [-73.813, 40.668]]
+      },
+      "properties": {
+        "id": "rockaway_beach_branch",
+        "name": "LIRR Rockaway Beach Branch",
+        "feature_type": "disused_corridor",
+        "borough": "Queens",
+        "status": "disused",
+        "opened_year": 1880,
+        "closed_year": 1962,
+        "nearby_active_routes": ["A", "J", "Z", "E", "F"],
+        "nearby_active_stations": ["Rockaway Boulevard", "Forest Hills-71st Avenue"],
+        "visibility": "Some right-of-way context may be visible from public streets and parks.",
+        "safety_classification": "public_view_only",
+        "summary": "Disused LIRR corridor in Queens often discussed in reuse, park, and transit history contexts.",
+        "source_ids": ["local_notes_rail_corridors"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-74.072, 40.644], [-74.107, 40.634], [-74.145, 40.633], [-74.198, 40.641]]
+      },
+      "properties": {
+        "id": "staten_island_north_shore_branch",
+        "name": "Staten Island North Shore Branch",
+        "feature_type": "disused_corridor",
+        "borough": "Staten Island",
+        "status": "disused passenger corridor",
+        "opened_year": 1886,
+        "closed_year": 1953,
+        "nearby_active_routes": ["SIR"],
+        "nearby_active_stations": ["St. George"],
+        "visibility": "Some corridor context may be visible from public streets; do not enter rail rights-of-way.",
+        "safety_classification": "public_view_only",
+        "summary": "Former Staten Island passenger rail corridor with recurring discussion around reuse and transit access.",
+        "source_ids": ["local_notes_rail_corridors"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-74.015, 40.644], [-73.973, 40.634], [-73.927, 40.636], [-73.891, 40.646]]
+      },
+      "properties": {
+        "id": "bay_ridge_branch",
+        "name": "Bay Ridge Branch",
+        "feature_type": "freight_corridor",
+        "borough": "Brooklyn",
+        "status": "freight corridor",
+        "opened_year": 1876,
+        "closed_year": null,
+        "nearby_active_routes": ["D", "N", "R", "Q", "B", "2", "5", "L"],
+        "nearby_active_stations": ["New Utrecht Avenue", "Flatbush Avenue-Brooklyn College"],
+        "visibility": "Use public bridges and streets only; do not enter active rail property.",
+        "safety_classification": "public_view_only",
+        "summary": "Freight rail corridor across Brooklyn that appears in regional rail and transit planning discussions.",
+        "source_ids": ["local_notes_rail_corridors"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-73.9592, 40.8080]},
+      "properties": {
+        "id": "one_hundred_twenty_ninth_street_station",
+        "name": "129th Street Station",
+        "feature_type": "abandoned_station",
+        "borough": "Manhattan",
+        "status": "closed",
+        "opened_year": 1904,
+        "closed_year": 1955,
+        "nearby_active_routes": ["1", "A", "B", "C", "D"],
+        "nearby_active_stations": ["125th Street", "145th Street"],
+        "visibility": "Historical-only map feature; do not attempt access.",
+        "safety_classification": "do_not_access",
+        "summary": "Former station on elevated rapid transit approaches in Upper Manhattan, tied to changing elevated service patterns.",
+        "source_ids": ["local_notes_manhattan_els", "local_notes_polo_grounds_shuttle"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-73.9919, 40.6971]},
+      "properties": {
+        "id": "sands_street_terminal",
+        "name": "Sands Street Terminal",
+        "feature_type": "former_elevated",
+        "borough": "Brooklyn",
+        "status": "demolished",
+        "opened_year": 1888,
+        "closed_year": 1944,
+        "nearby_active_routes": ["A", "C", "F", "R", "2", "3"],
+        "nearby_active_stations": ["High Street-Brooklyn Bridge", "Jay Street-MetroTech"],
+        "visibility": "Historical-only map feature; use public streets for context.",
+        "safety_classification": "historical_only",
+        "summary": "Former elevated railway terminal near the Brooklyn Bridge approach, central to early Brooklyn rapid transit patterns.",
+        "source_ids": ["local_notes_bmt_brooklyn"]
+      }
+    }
+  ]
+}
+

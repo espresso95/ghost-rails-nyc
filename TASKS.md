@@ -51,16 +51,16 @@ Done when:
 
 Goal: create the first map-ready dataset of historic rail features.
 
-- [ ] Define the `rail_feature` schema.
-- [ ] Create `data/features/features.geojson`.
-- [ ] Add 10 starter features for the earliest smoke test.
-- [ ] Expand to at least 20 MVP features.
-- [ ] Include feature IDs, names, types, boroughs, statuses, geometry, and summaries.
-- [ ] Add opened and closed years where known.
-- [ ] Add nearby active routes and stations where known.
-- [ ] Add `safety_classification` to every feature.
-- [ ] Add source IDs to every feature.
-- [ ] Validate GeoJSON syntax.
+- [x] Define the `rail_feature` schema.
+- [x] Create `data/features/features.geojson`.
+- [x] Add 10 starter features for the earliest smoke test.
+- [x] Expand to at least 20 MVP features.
+- [x] Include feature IDs, names, types, boroughs, statuses, geometry, and summaries.
+- [x] Add opened and closed years where known.
+- [x] Add nearby active routes and stations where known.
+- [x] Add `safety_classification` to every feature.
+- [x] Add source IDs to every feature.
+- [x] Validate GeoJSON syntax.
 
 Done when:
 
