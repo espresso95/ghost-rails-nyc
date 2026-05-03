@@ -46,6 +46,29 @@ Create a local environment file:
 cp .env.example .env
 ```
 
+Install backend dependencies:
+
+```bash
+cd backend
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e ".[dev]"
+```
+
+Start the backend:
+
+```bash
+cd backend
+source .venv/bin/activate
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+```
+
+Check health:
+
+```bash
+curl http://127.0.0.1:8000/api/health
+```
+
 ## Repository Layout
 
 ```text
@@ -107,3 +130,13 @@ GHOST_RAILS_EMBEDDING_MODEL=nomic-embed-text
 ```
 
 Changing the chat model does not require rebuilding the vector index. Changing the embedding model does require rebuilding the index, because embedding dimensions and similarity behavior can change.
+
+## Test Commands
+
+Backend tests:
+
+```bash
+cd backend
+source .venv/bin/activate
+python -m pytest
+```

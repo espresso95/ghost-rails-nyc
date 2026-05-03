@@ -27,20 +27,20 @@ Done when:
 
 Goal: stand up a minimal FastAPI service with configuration and health checks.
 
-- [ ] Create backend Python environment.
-- [ ] Add FastAPI, Uvicorn, Pydantic, and core dependencies.
-- [ ] Create `backend/app/main.py`.
+- [x] Create backend Python environment.
+- [x] Add FastAPI, Uvicorn, Pydantic, and core dependencies.
+- [x] Create `backend/app/main.py`.
 - [x] Create backend config module.
 - [x] Add model role interfaces for chat and embeddings.
 - [x] Add provider factory for swappable model configuration.
 - [x] Add Ollama chat and embedding adapters.
 - [x] Add Groq and Gemini chat adapters.
 - [x] Add tests for model settings and provider selection.
-- [ ] Add `GET /api/health`.
-- [ ] Check Ollama availability from the health endpoint.
-- [ ] Add placeholder vector store availability check.
-- [ ] Add backend startup command to README.
-- [ ] Add minimal backend tests for health behavior.
+- [x] Add `GET /api/health`.
+- [x] Check Ollama availability from the health endpoint.
+- [x] Add placeholder vector store availability check.
+- [x] Add backend startup command to README.
+- [x] Add minimal backend tests for health behavior.
 
 Done when:
 
