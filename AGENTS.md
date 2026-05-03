@@ -16,7 +16,8 @@ This project should stay clean, simple, local-first, and easy to reason about.
 
 ## Architecture
 
-- Preserve the local-first design: local LLM, local embeddings, local vector store, local feature data, and local source corpus.
+- Preserve the local-first design by default: local embeddings, local vector store, local feature data, and local source corpus.
+- Allow the chat model to move between local and cloud providers through configuration.
 - Keep frontend, backend, data processing, RAG, geospatial logic, and safety policy as separate concerns.
 - Keep the MVP small: reliable selected-feature RAG over curated data is more important than broad coverage.
 - Prefer explicit source metadata and citations over unsupported generated claims.
@@ -36,4 +37,3 @@ This project should stay clean, simple, local-first, and easy to reason about.
 - Keep raw, processed, source, feature, vector, and evaluation data separated.
 - Curate feature data manually before adding imports or scraping workflows.
 - Avoid redistributing copyrighted source text unless the license clearly permits it.
-
