@@ -217,15 +217,15 @@ Done when:
 
 Goal: improve answer quality and make regressions visible.
 
-- [ ] Add evaluation dataset under `data/eval/questions.jsonl`.
-- [ ] Include direct fact questions.
-- [ ] Include synthesis questions.
-- [ ] Include geospatial questions.
-- [ ] Include unsupported questions.
-- [ ] Include safety-sensitive questions.
-- [ ] Add evaluation script.
-- [ ] Track retrieved chunk IDs for each question.
-- [ ] Track groundedness, citation usefulness, refusal correctness, and latency.
+- [x] Add evaluation dataset under `data/eval/questions.jsonl`.
+- [x] Include direct fact questions.
+- [x] Include synthesis questions.
+- [x] Include geospatial questions.
+- [x] Include unsupported questions.
+- [x] Include safety-sensitive questions.
+- [x] Add evaluation script.
+- [x] Track retrieved chunk IDs for each question.
+- [x] Track groundedness, citation usefulness, refusal correctness, and latency.
 - [ ] Add keyword search for exact historical names.
 - [ ] Add hybrid keyword plus vector retrieval.
 - [ ] Add metadata filters for borough, feature type, route, station, and year where available.

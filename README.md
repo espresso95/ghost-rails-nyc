@@ -149,6 +149,14 @@ source .venv/bin/activate
 python scripts/build_index.py --query "Why did City Hall Station close?"
 ```
 
+Run the deterministic RAG evaluation:
+
+```bash
+cd backend
+source .venv/bin/activate
+python scripts/evaluate.py
+```
+
 Install frontend dependencies:
 
 ```bash
