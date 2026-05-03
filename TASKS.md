@@ -6,13 +6,13 @@ This task plan turns the design document into implementation phases. The goal is
 
 Goal: create a clean repo structure and confirm the local development baseline.
 
-- [ ] Confirm target stack: FastAPI backend, React/Vite frontend, MapLibre map, Ollama, Chroma, GeoJSON/SQLite.
-- [ ] Create backend folder structure.
-- [ ] Create frontend folder structure.
-- [ ] Create data folders for raw inputs, processed outputs, source documents, features, Chroma, and evaluation files.
-- [ ] Add `.env.example` with local service settings.
-- [ ] Add basic developer setup instructions to `README.md`.
-- [ ] Decide initial chat model and embedding model.
+- [x] Confirm target stack: FastAPI backend, React/Vite frontend, MapLibre map, Ollama, Chroma, GeoJSON/SQLite.
+- [x] Create backend folder structure.
+- [x] Create frontend folder structure.
+- [x] Create data folders for raw inputs, processed outputs, source documents, features, Chroma, and evaluation files.
+- [x] Add `.env.example` with local service settings.
+- [x] Add basic developer setup instructions to `README.md`.
+- [x] Decide initial chat model and embedding model.
 - [ ] Install and verify Ollama locally.
 - [ ] Pull local embedding model, starting with `nomic-embed-text`.
 - [ ] Pull one local instruct model for development.
