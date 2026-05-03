@@ -307,6 +307,35 @@ button {
   align-content: start;
 }
 
+.layer-controls {
+  display: grid;
+  gap: 12px;
+}
+
+.layer-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.layer-list label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 34px;
+  padding: 6px 9px;
+  border: 1px solid #d8e2dc;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #33443e;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.layer-list input {
+  accent-color: #203b36;
+}
+
 .prompt-row {
   display: flex;
   flex-wrap: wrap;
@@ -454,6 +483,11 @@ button {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .layer-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .prompt-row button {
     min-height: 40px;
   }
@@ -461,7 +495,8 @@ button {
 
 @media (max-width: 390px) {
   .fact-grid,
-  .prompt-row {
+  .prompt-row,
+  .layer-list {
     grid-template-columns: 1fr;
   }
 
@@ -469,4 +504,3 @@ button {
     max-width: 112px;
   }
 }
-

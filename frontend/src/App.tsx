@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { AlertTriangle, Layers, Search } from "lucide-react";
+import { AlertTriangle, Filter, Layers, Search } from "lucide-react";
 import { fetchFeatures, searchFeatures } from "./api/client";
 import { ChatPanel } from "./components/ChatPanel";
 import { FeaturePanel } from "./components/FeaturePanel";
@@ -10,6 +10,8 @@ export function App() {
   const [features, setFeatures] = useState<FeatureCollection | null>(null);
   const [selectedFeatureId, setSelectedFeatureId] = useState<string | null>(null);
   const [query, setQuery] = useState("");
+  const [visibleTypes, setVisibleTypes] = useState<string[]>([]);
+  const [publicOnly, setPublicOnly] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isSearching, setIsSearching] = useState(false);
 
@@ -22,6 +24,22 @@ export function App() {
   const selectedFeature = useMemo(() => {
     return features?.features.find((feature) => feature.properties.id === selectedFeatureId) ?? null;
   }, [features, selectedFeatureId]);
+
+  const featureTypes = useMemo(() => {
+    return Array.from(new Set(features?.features.map((feature) => feature.properties.feature_type) ?? [])).sort();
+  }, [features]);
+
+  const visibleFeatures = useMemo(() => {
+    if (!features) {
+      return null;
+    }
+    const nextFeatures = features.features.filter((feature) => {
+      const matchesType = visibleTypes.length === 0 || visibleTypes.includes(feature.properties.feature_type);
+      const matchesSafety = !publicOnly || feature.properties.safety_classification !== "do_not_access";
+      return matchesType && matchesSafety;
+    });
+    return {...features, features: nextFeatures};
+  }, [features, publicOnly, visibleTypes]);
 
   async function handleSearch() {
     if (!query.trim()) {
@@ -83,16 +101,42 @@ export function App() {
       <section className="workspace">
         <div className="map-region">
           <MapView
-            features={features}
+            features={visibleFeatures}
             selectedFeatureId={selectedFeatureId}
             onSelectFeature={setSelectedFeatureId}
           />
           <div className="map-status">
             <Layers size={16} aria-hidden="true" />
-            <span>{featureCountLabel(features?.features ?? [])}</span>
+            <span>{featureCountLabel(visibleFeatures?.features ?? [])}</span>
           </div>
         </div>
         <aside className="side-panel">
+          <section className="panel-section layer-controls">
+            <div className="chat-heading">
+              <Filter size={18} aria-hidden="true" />
+              <h2>Layers</h2>
+            </div>
+            <div className="layer-list">
+              {featureTypes.map((featureType) => (
+                <label key={featureType}>
+                  <input
+                    type="checkbox"
+                    checked={visibleTypes.includes(featureType)}
+                    onChange={() => setVisibleTypes((current) => toggleValue(current, featureType))}
+                  />
+                  <span>{formatType(featureType)}</span>
+                </label>
+              ))}
+              <label>
+                <input
+                  type="checkbox"
+                  checked={publicOnly}
+                  onChange={(event) => setPublicOnly(event.target.checked)}
+                />
+                <span>Hide do not access</span>
+              </label>
+            </div>
+          </section>
           <FeaturePanel feature={selectedFeature} />
           <ChatPanel selectedFeature={selectedFeature} />
         </aside>
@@ -101,10 +145,20 @@ export function App() {
   );
 }
 
+function toggleValue(values: string[], value: string) {
+  if (values.includes(value)) {
+    return values.filter((item) => item !== value);
+  }
+  return [...values, value];
+}
+
+function formatType(value: string) {
+  return value.replaceAll("_", " ");
+}
+
 function featureCountLabel(features: RailFeature[]) {
   if (features.length === 0) {
     return "Loading local features";
   }
   return `${features.length} curated features`;
 }
-

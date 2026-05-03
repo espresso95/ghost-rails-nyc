@@ -47,6 +47,7 @@ class AppSettings:
     api_port: int
     model_profile: str
     features_path: Path
+    stations_path: Path
     sources_path: Path
     chroma_path: Path
     chat: ChatModelSettings
@@ -100,6 +101,7 @@ def load_settings(env: Mapping[str, str] | None = None) -> AppSettings:
         api_port=_read_int(values, "GHOST_RAILS_API_PORT", 8000),
         model_profile=_read(values, "GHOST_RAILS_MODEL_PROFILE", "local_m2_16gb"),
         features_path=_resolve_repo_path(_read(values, "GHOST_RAILS_FEATURES_PATH", "data/features/features.geojson")),
+        stations_path=_resolve_repo_path(_read(values, "GHOST_RAILS_STATIONS_PATH", "data/processed/current_stations.json")),
         sources_path=_resolve_repo_path(_read(values, "GHOST_RAILS_SOURCES_PATH", "data/sources")),
         chroma_path=_resolve_repo_path(_read(values, "GHOST_RAILS_CHROMA_PATH", "data/chroma")),
         chat=chat,

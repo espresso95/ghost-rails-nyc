@@ -1,0 +1,20 @@
+{
+  "stations": [
+    {"id":"brooklyn_bridge_city_hall","name":"Brooklyn Bridge-City Hall","borough":"Manhattan","routes":["4","5","6"],"coordinates":[-74.0048,40.7131]},
+    {"id":"chambers_street_jz","name":"Chambers Street","borough":"Manhattan","routes":["J","Z"],"coordinates":[-74.0034,40.7132]},
+    {"id":"union_square","name":"14th Street-Union Square","borough":"Manhattan","routes":["4","5","6","L","N","Q","R","W"],"coordinates":[-73.9903,40.7347]},
+    {"id":"twenty_third_lex","name":"23rd Street","borough":"Manhattan","routes":["6"],"coordinates":[-73.9866,40.7398]},
+    {"id":"eighty_sixth_broadway","name":"86th Street","borough":"Manhattan","routes":["1"],"coordinates":[-73.9762,40.7886]},
+    {"id":"ninety_sixth_broadway","name":"96th Street","borough":"Manhattan","routes":["1","2","3"],"coordinates":[-73.9723,40.7939]},
+    {"id":"dekalb_avenue","name":"DeKalb Avenue","borough":"Brooklyn","routes":["B","Q","R"],"coordinates":[-73.9818,40.6906]},
+    {"id":"franklin_avenue_shuttle","name":"Franklin Avenue","borough":"Brooklyn","routes":["S"],"coordinates":[-73.9576,40.6806]},
+    {"id":"court_street","name":"Court Street","borough":"Brooklyn","routes":["R"],"coordinates":[-73.9914,40.6941]},
+    {"id":"jackson_heights_roosevelt","name":"Jackson Heights-Roosevelt Avenue","borough":"Queens","routes":["E","F","M","R"],"coordinates":[-73.8913,40.7466]},
+    {"id":"seventy_fourth_broadway","name":"74th Street-Broadway","borough":"Queens","routes":["7"],"coordinates":[-73.8912,40.7469]},
+    {"id":"broadway_junction","name":"Broadway Junction","borough":"Brooklyn","routes":["A","C","J","L","Z"],"coordinates":[-73.9031,40.6783]},
+    {"id":"rockaway_boulevard","name":"Rockaway Boulevard","borough":"Queens","routes":["A"],"coordinates":[-73.8439,40.6804]},
+    {"id":"st_george","name":"St. George","borough":"Staten Island","routes":["SIR"],"coordinates":[-74.0736,40.6437]},
+    {"id":"yankee_stadium","name":"161st Street-Yankee Stadium","borough":"Bronx","routes":["4","B","D"],"coordinates":[-73.9257,40.8279]}
+  ]
+}
+

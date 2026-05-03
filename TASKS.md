@@ -240,14 +240,14 @@ Done when:
 
 Goal: support location-aware exploration beyond clicking markers.
 
-- [ ] Add current subway station dataset.
-- [ ] Add current subway route context.
-- [ ] Link rail features to nearby active stations and routes.
-- [ ] Improve nearby feature search.
-- [ ] Support questions about features near a station or neighborhood.
-- [ ] Support route-oriented questions such as "near the 6 train."
-- [ ] Add map filters for borough and feature type.
-- [ ] Add layer controls for abandoned stations, former elevated lines, disused corridors, provisions, and public-view-only features.
+- [x] Add current subway station dataset.
+- [x] Add current subway route context.
+- [x] Link rail features to nearby active stations and routes.
+- [x] Improve nearby feature search.
+- [x] Support questions about features near a station or neighborhood.
+- [x] Support route-oriented questions such as "near the 6 train."
+- [x] Add map filters for borough and feature type.
+- [x] Add layer controls for abandoned stations, former elevated lines, disused corridors, provisions, and public-view-only features.
 
 Done when:
 

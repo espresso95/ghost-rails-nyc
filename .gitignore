@@ -15,3 +15,4 @@ data/chroma/*
 !data/chroma/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+!data/processed/current_stations.json
