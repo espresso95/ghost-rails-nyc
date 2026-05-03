@@ -1,0 +1,69 @@
+{
+  "sources": [
+    {
+      "id": "local_notes_city_hall",
+      "title": "City Hall Station Local Research Notes",
+      "source_type": "local_notes",
+      "local_path": "data/sources/city_hall_station.md",
+      "license_notes": "Original project notes; redistributable with project attribution.",
+      "date_accessed": "2026-05-03"
+    },
+    {
+      "id": "local_notes_irt_closed_stations",
+      "title": "Original IRT Closed Station Notes",
+      "source_type": "local_notes",
+      "local_path": "data/sources/irt_closed_stations.md",
+      "license_notes": "Original project notes; verify against primary sources before broadening factual claims.",
+      "date_accessed": "2026-05-03"
+    },
+    {
+      "id": "local_notes_bmt_brooklyn",
+      "title": "BMT Brooklyn Elevated and Closed Platform Notes",
+      "source_type": "local_notes",
+      "local_path": "data/sources/bmt_brooklyn.md",
+      "license_notes": "Original project notes; verify against primary sources before broadening factual claims.",
+      "date_accessed": "2026-05-03"
+    },
+    {
+      "id": "local_notes_polo_grounds_shuttle",
+      "title": "Polo Grounds Shuttle Local Notes",
+      "source_type": "local_notes",
+      "local_path": "data/sources/polo_grounds_shuttle.md",
+      "license_notes": "Original project notes; verify against primary sources before broadening factual claims.",
+      "date_accessed": "2026-05-03"
+    },
+    {
+      "id": "local_notes_transit_museum",
+      "title": "Court Street and Transit Museum Notes",
+      "source_type": "local_notes",
+      "local_path": "data/sources/transit_museum.md",
+      "license_notes": "Original project notes; redistributable with project attribution.",
+      "date_accessed": "2026-05-03"
+    },
+    {
+      "id": "local_notes_ind_second_system",
+      "title": "IND Second System and Unused Provision Notes",
+      "source_type": "local_notes",
+      "local_path": "data/sources/ind_second_system.md",
+      "license_notes": "Original project notes; verify against primary sources before broadening factual claims.",
+      "date_accessed": "2026-05-03"
+    },
+    {
+      "id": "local_notes_manhattan_els",
+      "title": "Manhattan Elevated Railway Notes",
+      "source_type": "local_notes",
+      "local_path": "data/sources/manhattan_els.md",
+      "license_notes": "Original project notes; verify against primary sources before broadening factual claims.",
+      "date_accessed": "2026-05-03"
+    },
+    {
+      "id": "local_notes_rail_corridors",
+      "title": "Disused and Freight Rail Corridor Notes",
+      "source_type": "local_notes",
+      "local_path": "data/sources/rail_corridors.md",
+      "license_notes": "Original project notes; verify against primary sources before broadening factual claims.",
+      "date_accessed": "2026-05-03"
+    }
+  ]
+}
+

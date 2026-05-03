@@ -72,15 +72,15 @@ Done when:
 
 Goal: build a small, clean local document corpus for source-grounded answers.
 
-- [ ] Create `data/sources`.
-- [ ] Collect 5-10 initial source documents for key features.
-- [ ] Convert source material to markdown or plain text.
-- [ ] Add metadata frontmatter to each source document.
-- [ ] Track source title, document ID, source type, local path, access date, and license notes.
-- [ ] Preserve dates, headings, and historical names.
-- [ ] Remove navigation text and unrelated boilerplate.
-- [ ] Create a source manifest.
-- [ ] Mark which sources are personal-local-use only versus redistributable.
+- [x] Create `data/sources`.
+- [x] Collect 5-10 initial source documents for key features.
+- [x] Convert source material to markdown or plain text.
+- [x] Add metadata frontmatter to each source document.
+- [x] Track source title, document ID, source type, local path, access date, and license notes.
+- [x] Preserve dates, headings, and historical names.
+- [x] Remove navigation text and unrelated boilerplate.
+- [x] Create a source manifest.
+- [x] Mark which sources are personal-local-use only versus redistributable.
 
 Done when:
 
