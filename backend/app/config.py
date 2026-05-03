@@ -10,6 +10,7 @@ from typing import Mapping
 DEFAULT_OLLAMA_BASE_URL = "http://localhost:11434"
 DEFAULT_GROQ_BASE_URL = "https://api.groq.com/openai/v1"
 DEFAULT_GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta"
+REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 @dataclass(frozen=True)
@@ -97,9 +98,9 @@ def load_settings(env: Mapping[str, str] | None = None) -> AppSettings:
         api_host=_read(values, "GHOST_RAILS_API_HOST", "127.0.0.1"),
         api_port=_read_int(values, "GHOST_RAILS_API_PORT", 8000),
         model_profile=_read(values, "GHOST_RAILS_MODEL_PROFILE", "local_m2_16gb"),
-        features_path=Path(_read(values, "GHOST_RAILS_FEATURES_PATH", "data/features/features.geojson")),
-        sources_path=Path(_read(values, "GHOST_RAILS_SOURCES_PATH", "data/sources")),
-        chroma_path=Path(_read(values, "GHOST_RAILS_CHROMA_PATH", "data/chroma")),
+        features_path=_resolve_repo_path(_read(values, "GHOST_RAILS_FEATURES_PATH", "data/features/features.geojson")),
+        sources_path=_resolve_repo_path(_read(values, "GHOST_RAILS_SOURCES_PATH", "data/sources")),
+        chroma_path=_resolve_repo_path(_read(values, "GHOST_RAILS_CHROMA_PATH", "data/chroma")),
         chat=chat,
         embedding=embedding,
         retrieval=retrieval,
@@ -180,3 +181,9 @@ def _slug(value: str) -> str:
     slug = re.sub(r"[^a-zA-Z0-9]+", "-", value.strip().lower()).strip("-")
     return slug or "default"
 
+
+def _resolve_repo_path(value: str) -> Path:
+    path = Path(value)
+    if path.is_absolute():
+        return path
+    return REPO_ROOT / path

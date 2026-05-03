@@ -92,16 +92,16 @@ Done when:
 
 Goal: ingest local documents, chunk them, embed them locally, and persist vectors.
 
-- [ ] Add ingestion module under `backend/app/rag`.
-- [ ] Add script for building the index.
-- [ ] Load markdown and text source documents.
-- [ ] Parse source frontmatter.
-- [ ] Chunk documents by headings first, then token length.
-- [ ] Attach metadata to chunks, including document ID, source title, feature IDs, borough, and feature type.
+- [x] Add ingestion module under `backend/app/rag`.
+- [x] Add script for building the index.
+- [x] Load markdown and text source documents.
+- [x] Parse source frontmatter.
+- [x] Chunk documents by headings first, then token length.
+- [x] Attach metadata to chunks, including document ID, source title, feature IDs, borough, and feature type.
 - [ ] Generate embeddings through Ollama.
-- [ ] Persist vectors to Chroma.
-- [ ] Add a simple CLI query path for local testing.
-- [ ] Add clear logging for indexed documents and chunks.
+- [x] Persist a low-RAM local retrieval index.
+- [x] Add a simple CLI query path for local testing.
+- [x] Add clear logging for indexed documents and chunks.
 
 Done when:
 

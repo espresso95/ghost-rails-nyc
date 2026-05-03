@@ -140,3 +140,11 @@ cd backend
 source .venv/bin/activate
 python -m pytest
 ```
+
+Build the local retrieval index:
+
+```bash
+cd backend
+source .venv/bin/activate
+python scripts/build_index.py --query "Why did City Hall Station close?"
+```

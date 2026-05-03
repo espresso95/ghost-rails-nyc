@@ -9,6 +9,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from app.config import DEFAULT_GROQ_BASE_URL, DEFAULT_OLLAMA_BASE_URL, load_settings
 
 
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+
 class LoadSettingsTest(unittest.TestCase):
     def test_defaults_use_low_ram_local_profile(self) -> None:
         settings = load_settings({})
@@ -52,7 +55,7 @@ class LoadSettingsTest(unittest.TestCase):
             }
         )
 
-        self.assertEqual(settings.embedding_index_path, Path("data/chroma/ollama-nomic-embed-text"))
+        self.assertEqual(settings.embedding_index_path, REPO_ROOT / "data/chroma/ollama-nomic-embed-text")
 
     def test_invalid_integer_setting_raises_clear_error(self) -> None:
         with self.assertRaisesRegex(ValueError, "GHOST_RAILS_API_PORT must be an integer"):
@@ -61,4 +64,3 @@ class LoadSettingsTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
