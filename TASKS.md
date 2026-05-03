@@ -112,18 +112,18 @@ Done when:
 
 Goal: expose structured map data and basic search from the backend.
 
-- [ ] Add `GET /api/features`.
-- [ ] Support filtering by feature type.
-- [ ] Support filtering by borough.
-- [ ] Support filtering by status.
-- [ ] Support optional bounding box filtering.
-- [ ] Add `GET /api/features/{feature_id}`.
-- [ ] Add `GET /api/search?q=...`.
-- [ ] Implement exact and fuzzy name matching for features.
-- [ ] Add `GET /api/features/nearby`.
-- [ ] Calculate nearby features by lat/lon and radius.
-- [ ] Add response schemas for feature and search results.
-- [ ] Add tests for feature loading, filtering, detail lookup, and nearby search.
+- [x] Add `GET /api/features`.
+- [x] Support filtering by feature type.
+- [x] Support filtering by borough.
+- [x] Support filtering by status.
+- [x] Support optional bounding box filtering.
+- [x] Add `GET /api/features/{feature_id}`.
+- [x] Add `GET /api/search?q=...`.
+- [x] Implement exact and fuzzy name matching for features.
+- [x] Add `GET /api/features/nearby`.
+- [x] Calculate nearby features by lat/lon and radius.
+- [x] Add response schemas for feature and search results.
+- [x] Add tests for feature loading, filtering, detail lookup, and nearby search.
 
 Done when:
 
